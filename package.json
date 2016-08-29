@@ -1,0 +1,21 @@
+{
+  "name": "scheglov.pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "css-loader": "^0.24.0",
+    "path": "^0.12.7",
+    "postcss": "^5.1.2",
+    "postcss-loader": "^0.11.0",
+    "precss": "^1.4.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2"
+  }
+}
