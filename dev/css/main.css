@@ -82,3 +82,25 @@ ul {
         font-size: 1.3rem;
     }
 }
+
+nav {
+    .photo {
+            position: relative;
+    margin: 0 0 20px;
+        a {
+            display: block;
+            text-indent: -100000000px;
+            height: 260px;
+            width: auto;
+            background: url(/media/hello.jpg) center center no-repeat;
+            background-size: cover;
+        }
+    }
+}
+.skills {
+    h2 {
+        border-top: 4px solid $b;
+        display: inline-block;
+        padding: 10px 0;
+    }
+}

@@ -12,6 +12,7 @@
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "css-loader": "^0.24.0",
+    "file-loader": "^0.9.0",
     "path": "^0.12.7",
     "postcss": "^5.1.2",
     "postcss-loader": "^0.11.0",

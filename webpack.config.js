@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var paths = require('./paths');
 var autoprefixer = require('autoprefixer');
 var precss = require('precss');
 
@@ -13,9 +14,9 @@ module.exports = {
         './dev/script/index'
     ],
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'dev'),
         filename: 'app.js',
-        publicPath: '/scripts/'
+        publicPath: '/'
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
@@ -24,7 +25,13 @@ module.exports = {
         loaders: [{
             test: /\.css$/,
             loader: 'style-loader!css-loader!postcss-loader',
-            include: path.resolve(__dirname, 'dev/css')
+        }, {
+            test: /\.(jpg|png)$/,
+            include: paths.dev,
+            loader: 'file-loader',
+            query: {
+                name: 'media/[name].[ext]'
+            }
         }]
     },
     postcss: function() {
