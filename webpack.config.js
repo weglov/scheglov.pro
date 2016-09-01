@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var paths = require('./paths');
 var autoprefixer = require('autoprefixer');
 var precss = require('precss');
-
+var DashboardPlugin = require('webpack-dashboard/plugin');
 var PROD = JSON.parse(process.env.PROD_DEV || "0");
 
 module.exports = {
@@ -19,14 +19,15 @@ module.exports = {
         publicPath: '/'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new DashboardPlugin()
     ],
     module: {
         loaders: [{
             test: /\.css$/,
             loader: 'style-loader!css-loader!postcss-loader',
         }, {
-            test: /\.(jpg|png)$/,
+            test: /\.(jpg|png|svg)$/,
             include: paths.dev,
             loader: 'file-loader',
             query: {

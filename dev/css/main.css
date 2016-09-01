@@ -1,4 +1,5 @@
 @import 'reset.css';
+@import 'evil-icons.css';
 $wb: #F0F5F7;
 $gr: rgba(0, 0, 0, .05);
 $wh: #FFF;
@@ -92,15 +93,40 @@ nav {
             text-indent: -100000000px;
             height: 260px;
             width: auto;
-            background: url(/media/hello.jpg) center center no-repeat;
+            background: url('../img/hello.jpg') center center no-repeat;
             background-size: cover;
         }
     }
 }
 .skills {
     h2 {
-        border-top: 4px solid $b;
-        display: inline-block;
+        border-top: 5px solid #0155a9;
+        display: block;
         padding: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1rem;
     }
 }
+
+.contact {
+            padding: 0 0 0 0px;
+            li {
+                padding: 0;
+                a {
+                        color: #666;
+                        text-decoration: none;
+                        display: block;
+                        position: relative;
+                        padding: 10px 0 10px 0;
+                        span {
+                            display: inline-block;
+                            vertical-align: top;
+                            height: 25px;
+                            line-height: 25px;
+                            margin-left: 10px;
+                        }
+                }
+            }
+    }
