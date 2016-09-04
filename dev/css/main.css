@@ -8,12 +8,12 @@ $b: #1b88d6;
 $g: #9e9e9e;
 $yl: #F7F5F0;
 html {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 body {
     background: $wb;
-    font-family: 'PT Sans Caption', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .main {
@@ -160,6 +160,21 @@ nav {
         letter-spacing: 3px;
     }
 }
+#project {
+    min-height: 40vh;
+    padding: 0 2.5rem 1.5rem;
+    h2 {
+        border-top: 5px solid $b;
+        display: block;
+        padding: 10px 0 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0px;
+        color: #000000;
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+}
 
 .work {
     margin: 2rem 2.5rem;
@@ -181,6 +196,7 @@ nav {
     }
     &__stack {
         margin-top: 10px;
+        margin-left: 1rem;
         span {
             font-weight: bold;
         }
@@ -193,5 +209,14 @@ nav {
         top: 2px;
         right: 0;
         color: $b;
+    }
+}
+.showcase {
+    width: 200px;
+    display: inline-block;
+    margin: 2rem;
+    text-align: center;
+    &__title {
+        margin: 10px 0 0 0;
     }
 }
